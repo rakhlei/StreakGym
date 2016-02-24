@@ -12,7 +12,7 @@ h3, h2 {
 }
 
 .container-fluid {
-    padding: 70px 60px;
+    padding: 50px 60px;
 }
 
 .logo-small {
@@ -26,7 +26,7 @@ h3, h2 {
 }
 
 .navbar {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     background-color: #c4fef4;
     z-index: 9999;
     border: 0;
@@ -36,8 +36,12 @@ h3, h2 {
     border-radius: 0;
 }
 
-.navbar li a, .navbar .navbar-brand {
+.navbar li a, .navbar  {
     color: #336699 !important;
+}
+
+.navbar-brand {
+	padding: 0;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
@@ -58,4 +62,15 @@ footer .glyphicon {
 
 #bio {
 	font-size: 20px;
+}
+
+.circle {
+width:300px;
+height:300px;
+border-radius:50%;
+font-size:30px;
+color:#fff;
+line-height:300px;
+text-align:center;
+background:#336699
 }
