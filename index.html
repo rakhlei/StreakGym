@@ -8,8 +8,7 @@
 		<link rel="stylesheet" href="streak.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		<link rel="shortcut icon" type="image/x-icon" href="browserLogo.png" />
-		`
+		<link rel="shortcut icon" type="image/x-icon" href="logoBrowser.png" />
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<div id="top" class="jumbotron text-center">
@@ -17,7 +16,6 @@
 			<p>Why Put Off Feeling Good?</p>
 		</div>
 		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -38,7 +36,6 @@
 						</ul>
 					</div>
 				</div>
-			</div>
 		</nav>
 		
 		<!-- SIGN UP MODAL -->
@@ -78,33 +75,62 @@
 		<!-- ACTIVITY Section -->
 		<div id="activity" class="container-fluid">
 			<div class="row">
-				<div class="col-md-4 col-md-offset-4">
-					<h2>Number of Current Points</h2>
+				<div class="col-md-4 push">
+					<p class="medSize">Today's Steps</p>
+					<p id="circleSide1">6,450 Steps</p>
+				</div>
+				<div class="col-md-4">
+					<p class="medSize text-center">Number of Current Points</p>
 					<div class="circle">15 Points</div>
+				</div>
+				<div class="col-md-4 push">
+					<p class="medSize text-center">Current Streak</p>
+					<p id="circleSide2">15,550 Steps</p>
 				</div>
 			</div>
 		</div>
 		
 		<!-- POINTS Section -->
 		<div id="points" class="container-fluid bg-grey">
-			<h2>Points Breakdown</h2>
+			<h2 class="text-center">Points Breakdown</h2>
+			<div class="col-md-8 col-md-offset-2">
 			<h4>Minimum 49,000 steps per week</h4>
 			<div class="progress">
-						<div class="progress-bar progress-bar-success" role="progressbar" 	aria-valuenow="28.6" aria-valuemin="0" aria-valuemax="100" style="width:28.6%">
-							2/7 Days Complete
+						<div class="progress-bar progress-bar-success" role="progressbar" 	aria-valuenow="15550" aria-valuemin="0" aria-valuemax="100" style="width:31.7%">
+							15,550 steps
 						</div>
 			</div>
-			<br>
 			<h4>49,000 - 69,999 steps = 10 points</h4>
-			<br>
+			<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" 	aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+							0 steps
+						</div>
+			</div>
 			<h4>70,000 - 90,999 steps = 15 points</h4>
-			<br>
+			<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" 	aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+							0 steps
+						</div>
+			</div>
 			<h4>91,000 - 111,999 steps = 20 points</h4>
-			<br>
+			<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" 	aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+							0 steps
+						</div>
+			</div>
 			<h4>112,000 - 132,999 steps = 25 points</h4>
-			<br>
+			<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" 	aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+							0 steps
+						</div>
+			</div>
 			<h4>133,000 and above = 30 points</h4>
-			<h4>
+			<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" 	aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+							0 steps
+						</div>
+			</div>
+			</div>
 		</div>
 		
 		<!-- REWARDS Section -->
@@ -114,37 +140,37 @@
 			<br>
 			<div class="row">
 				<div class="col-sm-4">
-					<span class="glyphicon glyphicon-off logo-small"></span>
-					<h4>POWER</h4>
-					<p>Lorem ipsum dolor sit amet..</p>
+					<img src="gym300.png" alt="Lifting image" width="70" height="70">
+					<h4>Gym Membership (300 points)</h4>
+					<p>Get a month long free gym membership</p>
 				</div>
 				<div class="col-sm-4">
-					<span class="glyphicon glyphicon-heart logo-small"></span>
-					<h4>LOVE</h4>
-					<p>Lorem ipsum dolor sit amet..</p>
+					<img src="lift.png" alt="Lifting image" width="70" height="70">
+					<h4>Gym Membership (100 points)</h4>
+					<p>Get a one week long free gym membership</p>
 				</div>
 				<div class="col-sm-4">
-					<span class="glyphicon glyphicon-lock logo-small"></span>
-					<h4>JOB DONE</h4>
-					<p>Lorem ipsum dolor sit amet..</p>
+					<img src="squat.png" alt="Lifting image" width="70" height="70">
+					<h4>Gym Discount (400 points)</h4>
+					<p>Get 15 % next yearlong gym membership</p>
 				</div>
 			</div>
 			<br><br>
 			<div class="row">
 				<div class="col-sm-4">
-					<span class="glyphicon glyphicon-leaf logo-small"></span>
-					<h4>GREEN</h4>
-					<p>Lorem ipsum dolor sit amet..</p>
+					<img src="discount400.png" alt="Lifting image" width="70" height="70">
+					<h4>Cross-fit (100 points)</h4>
+					<p>Get a free week of cross-fit classes</p>
 				</div>
 				<div class="col-sm-4">
-					<span class="glyphicon glyphicon-certificate logo-small"></span>
-					<h4>CERTIFIED</h4>
-					<p>Lorem ipsum dolor sit amet..</p>
+					<img src="cycling1.png" alt="Lifting image" width="70" height="70">
+					<h4>Spinning (100 points)</h4>
+					<p>Get a free week of spinning classes</p>
 				</div>
 				<div class="col-sm-4">
-					<span class="glyphicon glyphicon-wrench logo-small"></span>
-					<h4>HARD WORK</h4>
-					<p>Lorem ipsum dolor sit amet..</p>
+					<img src="yoga.png" alt="Lifting image" width="70" height="70">
+					<h4>Yoga (100 points)</h4>
+					<p>Get a free week of yoga classes</p>
 				</div>
 			</div>
 		</div>
@@ -154,9 +180,11 @@
 			<div class="col-md-4">
 				<img src="carol.png" class="img-circle img-responsive" alt="Carol Turner" width="221" height="295">
 			</div>
-			<h2>Carol Turner</h2>
-			<h3>Age: 52</h3>
-			<h3>About Carol:</h3>
+			<p class="medSize">Carol Turner</p>
+			<p class="smSize">Age: 52</p>
+			<p class="smSize">Height: 5'6</p>
+			<p class="smSize">Weight: 140lbs</p>
+			<p class="smSize">About Carol:</p>
 			<p id="bio">I enjoy walking with friends, baking, yoga, wine enthusiast, spending time with family!</p>
 		</div>
 		
