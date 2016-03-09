@@ -5,12 +5,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<link rel="stylesheet" href="streak.css">
+		<link rel="stylesheet" href="../streak.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
-		<link rel="shortcut icon" type="image/x-icon" href="logoBrowser.png" />
+		<link rel="shortcut icon" type="image/x-icon" href="../images/logoBrowser.png" />
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<div id="top" class="jumbotron text-center">
@@ -25,7 +25,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span> 
 						</button>
-						<a class="navbar-brand" href="#"><img src="logo.gif" alt="Streak for the Gym Logo" width="120" height="50"></a>
+						<a class="navbar-brand" href="#"><img src="../images/logo.gif" alt="Streak for the Gym Logo" width="120" height="50"></a>
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav navbar-right">
@@ -40,8 +40,9 @@
 				</div>
 		</nav>
 		
-		<button ng-click="login()">Button</button>
-		<h1>{{accessToken}}</h1>
+		<b>Access Token: </b> {{accessToken}}
+		<p></p><b>User Name </b> 
+		<div id="username"></div>
 		
 		<!-- ACTIVITY Section -->
 		<div id="activity" class="container-fluid">
@@ -111,17 +112,17 @@
 			<br>
 			<div class="row">
 				<div class="col-sm-4">
-					<img src="gym300.png" alt="Lifting image" width="70" height="70">
+					<img src="../images/gym300.png" alt="Lifting image" width="70" height="70">
 					<h4>Gym Membership (300 points)</h4>
 					<p>Get a month long free gym membership</p>
 				</div>
 				<div class="col-sm-4">
-					<img src="lift.png" alt="Lifting image" width="70" height="70">
+					<img src="../images/lift.png" alt="Lifting image" width="70" height="70">
 					<h4>Gym Membership (100 points)</h4>
 					<p>Get a one week long free gym membership</p>
 				</div>
 				<div class="col-sm-4">
-					<img src="squat.png" alt="Lifting image" width="70" height="70">
+					<img src="../images/squat.png" alt="Lifting image" width="70" height="70">
 					<h4>Gym Discount (400 points)</h4>
 					<p>Get 15 % next yearlong gym membership</p>
 				</div>
@@ -129,17 +130,17 @@
 			<br><br>
 			<div class="row">
 				<div class="col-sm-4">
-					<img src="discount400.png" alt="Lifting image" width="70" height="70">
+					<img src="../images/discount400.png" alt="Lifting image" width="70" height="70">
 					<h4>Cross-fit (100 points)</h4>
 					<p>Get a free week of cross-fit classes</p>
 				</div>
 				<div class="col-sm-4">
-					<img src="cycling1.png" alt="Lifting image" width="70" height="70">
+					<img src="../images/cycling1.png" alt="Lifting image" width="70" height="70">
 					<h4>Spinning (100 points)</h4>
 					<p>Get a free week of spinning classes</p>
 				</div>
 				<div class="col-sm-4">
-					<img src="yoga.png" alt="Lifting image" width="70" height="70">
+					<img src="../images/yoga.png" alt="Lifting image" width="70" height="70">
 					<h4>Yoga (100 points)</h4>
 					<p>Get a free week of yoga classes</p>
 				</div>
@@ -149,7 +150,7 @@
 		<!-- ABOUT ME -->
 		<div id="aboutMe" class="container-fluid bg-grey">
 			<div class="col-md-4">
-				<img src="carol.png" class="img-circle img-responsive" alt="Carol Turner" width="221" height="295">
+				<img src="../images/carol.png" class="img-circle img-responsive" alt="Carol Turner" width="221" height="295">
 			</div>
 			<p class="medSize">Carol Turner</p>
 			<p class="smSize">Age: 52</p>
@@ -161,8 +162,18 @@
 		
 		<!-- INFO -->
 		<div id="info" class="container-fluid">
-			<h2 class="text-center">INFORMATION</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices feugiat massa id semper. Proin imperdiet arcu at viverra ultricies. In hac habitasse platea dictumst. Duis facilisis lobortis vestibulum. Morbi dictum consequat commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nec sem ac nulla vehicula condimentum ut a nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin sed varius magna. Praesent eros nibh, sollicitudin quis orci ac, porta faucibus turpis. Ut mi magna, ultrices sit amet fringilla sit amet, dapibus ut nisl. Etiam viverra, arcu nec eleifend bibendum, massa ligula pharetra diam, ac vulputate magna velit non felis. Morbi in ultricies neque. Fusce elementum leo quis nisl semper auctor.</p>
+			<h2 class="text-center">HOW DO I GET REWARDED?</h2>
+				<div class="col-md-8 col-md-offset-2">
+				<p>Here at Streak for the Gym, we're all about streaks! Each day you work to hit your FitBit's daily step goal. We push you though, any goals under 7,000 steps per day will automatically be pushed up to 7,000.</p>
+				<p>Every 7-day streak you accomplish you'll earn points! The more steps you take, the more points you earn!</p>
+				<p>49,000 - 69,999 steps = 10 points</p>
+				<p>70,000 - 90,999 steps = 15 points</p>
+				<p>91,000 - 111,999 steps = 20 points</p>
+				<p>112,000 - 132,999 steps = 25 points</p>
+				<p>133,000 and above steps = 30 points</p>
+				<p>Once the 7-days end, these points will go to your point bank. Once you get enough points you can redeem them for one of our many rewards!</p>
+				<p>There's a catch though! If you miss a day and don't hit your daily step goal, your streak ends :(. A new streak will start the next day!</p>
+				</div>
 		</div>
 		
 		<!-- FOOTER -->
